@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E31E99361A7B5B7E00BDB079 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E99351A7B5B7E00BDB079 /* FeedViewController.swift */; };
+		E31E99381A7DCDBD00BDB079 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E99371A7DCDBD00BDB079 /* RequestsViewController.swift */; };
+		E31E993A1A7DD1F500BDB079 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E99391A7DD1F500BDB079 /* MessagesViewController.swift */; };
+		E31E993C1A7DD40200BDB079 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E993B1A7DD40200BDB079 /* NotificationsViewController.swift */; };
+		E31E993E1A7DD63B00BDB079 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E993D1A7DD63B00BDB079 /* MoreViewController.swift */; };
+		E31E99401A7F0FD000BDB079 /* ThrillistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E993F1A7F0FD000BDB079 /* ThrillistViewController.swift */; };
 		E3CBC8AA1A7B2217009BEA2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CBC8A91A7B2217009BEA2E /* AppDelegate.swift */; };
 		E3CBC8AC1A7B2217009BEA2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CBC8AB1A7B2217009BEA2E /* ViewController.swift */; };
 		E3CBC8AF1A7B2217009BEA2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3CBC8AD1A7B2217009BEA2E /* Main.storyboard */; };
@@ -27,6 +32,11 @@
 
 /* Begin PBXFileReference section */
 		E31E99351A7B5B7E00BDB079 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E31E99371A7DCDBD00BDB079 /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		E31E99391A7DD1F500BDB079 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		E31E993B1A7DD40200BDB079 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		E31E993D1A7DD63B00BDB079 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = ../MoreViewController.swift; sourceTree = "<group>"; };
+		E31E993F1A7F0FD000BDB079 /* ThrillistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrillistViewController.swift; sourceTree = "<group>"; };
 		E3CBC8A41A7B2217009BEA2E /* Ybook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ybook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CBC8A81A7B2217009BEA2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3CBC8A91A7B2217009BEA2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,8 +89,13 @@
 			children = (
 				E3CBC8A91A7B2217009BEA2E /* AppDelegate.swift */,
 				E3CBC8AB1A7B2217009BEA2E /* ViewController.swift */,
+				E31E993F1A7F0FD000BDB079 /* ThrillistViewController.swift */,
 				E31E99351A7B5B7E00BDB079 /* FeedViewController.swift */,
 				E3CBC8AD1A7B2217009BEA2E /* Main.storyboard */,
+				E31E99391A7DD1F500BDB079 /* MessagesViewController.swift */,
+				E31E993D1A7DD63B00BDB079 /* MoreViewController.swift */,
+				E31E993B1A7DD40200BDB079 /* NotificationsViewController.swift */,
+				E31E99371A7DCDBD00BDB079 /* RequestsViewController.swift */,
 				E3CBC8B01A7B2217009BEA2E /* Images.xcassets */,
 				E3CBC8A71A7B2217009BEA2E /* Supporting Files */,
 			);
@@ -211,8 +226,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31E993E1A7DD63B00BDB079 /* MoreViewController.swift in Sources */,
+				E31E993A1A7DD1F500BDB079 /* MessagesViewController.swift in Sources */,
 				E3CBC8AC1A7B2217009BEA2E /* ViewController.swift in Sources */,
 				E31E99361A7B5B7E00BDB079 /* FeedViewController.swift in Sources */,
+				E31E993C1A7DD40200BDB079 /* NotificationsViewController.swift in Sources */,
+				E31E99381A7DCDBD00BDB079 /* RequestsViewController.swift in Sources */,
+				E31E99401A7F0FD000BDB079 /* ThrillistViewController.swift in Sources */,
 				E3CBC8AA1A7B2217009BEA2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

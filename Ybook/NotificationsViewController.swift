@@ -1,23 +1,25 @@
 //
-//  FeedViewController.swift
+//  NotificationsViewController.swift
 //  Ybook
 //
-//  Created by yahoo on 1/29/15.
+//  Created by yahoo on 1/31/15.
 //  Copyright (c) 2015 yahoo. All rights reserved.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class NotificationsViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var feedImage: UIImageView!
+    
+    @IBOutlet weak var scrolledImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        scrollView.contentSize = feedImage.image!.size
-		scrollView.contentSize.height += 50
+        scrollView.contentSize = scrolledImageView.image!.size
+        scrollView.contentSize.height += 40
+//		scrollView.contentSize.height += tabViewController.tabBar.frame.size.height
     }
 
     override func didReceiveMemoryWarning() {

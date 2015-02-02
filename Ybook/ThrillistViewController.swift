@@ -1,23 +1,24 @@
 //
-//  FeedViewController.swift
+//  ThrillistViewController.swift
 //  Ybook
 //
-//  Created by yahoo on 1/29/15.
+//  Created by yahoo on 2/1/15.
 //  Copyright (c) 2015 yahoo. All rights reserved.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class ThrillistViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var feedImage: UIImageView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        scrollView.contentSize = feedImage.image!.size
-		scrollView.contentSize.height += 50
+	@IBOutlet weak var scrollView: UIScrollView!
+	
+	@IBOutlet weak var scrolledImageView: UIImageView!
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		scrollView.contentSize = scrolledImageView.image!.size
+		scrollView.contentSize.height += 100
     }
 
     override func didReceiveMemoryWarning() {
