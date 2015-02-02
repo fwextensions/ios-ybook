@@ -1,5 +1,5 @@
 //
-//  ThrillistViewController.swift
+//  PostStatusViewController.swift
 //  Ybook
 //
 //  Created by yahoo on 2/1/15.
@@ -8,20 +8,12 @@
 
 import UIKit
 
-class ThrillistViewController: UIViewController {
+class PostStatusViewController: UIViewController {
 
-	@IBOutlet weak var scrollView: UIScrollView!
-	
-	@IBOutlet weak var scrolledImageView: UIImageView!
-	
-	@IBAction func onBackButton(sender: AnyObject) {
-		navigationController!.popViewControllerAnimated(true)
-	}
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		scrollView.contentSize = scrolledImageView.image!.size
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +21,9 @@ class ThrillistViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+	@IBAction func onCancel(sender: AnyObject) {
+		dismissViewControllerAnimated(true, completion: nil)
+	}
 
     /*
     // MARK: - Navigation

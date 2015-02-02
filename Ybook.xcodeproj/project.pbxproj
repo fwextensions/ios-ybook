@@ -13,6 +13,10 @@
 		E31E993C1A7DD40200BDB079 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E993B1A7DD40200BDB079 /* NotificationsViewController.swift */; };
 		E31E993E1A7DD63B00BDB079 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E993D1A7DD63B00BDB079 /* MoreViewController.swift */; };
 		E31E99401A7F0FD000BDB079 /* ThrillistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E993F1A7F0FD000BDB079 /* ThrillistViewController.swift */; };
+		E31E99421A7F1F0800BDB079 /* PostStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E99411A7F1F0800BDB079 /* PostStatusViewController.swift */; };
+		E31E99441A7F209400BDB079 /* Ybook in Sources */ = {isa = PBXBuildFile; fileRef = E31E99431A7F209400BDB079 /* Ybook */; };
+		E31E994A1A7F248300BDB079 /* PostPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E99491A7F248300BDB079 /* PostPhotoViewController.swift */; };
+		E31E994C1A7F250500BDB079 /* PostCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E994B1A7F250500BDB079 /* PostCheckinViewController.swift */; };
 		E3CBC8AA1A7B2217009BEA2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CBC8A91A7B2217009BEA2E /* AppDelegate.swift */; };
 		E3CBC8AC1A7B2217009BEA2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CBC8AB1A7B2217009BEA2E /* ViewController.swift */; };
 		E3CBC8AF1A7B2217009BEA2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3CBC8AD1A7B2217009BEA2E /* Main.storyboard */; };
@@ -37,6 +41,10 @@
 		E31E993B1A7DD40200BDB079 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		E31E993D1A7DD63B00BDB079 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = ../MoreViewController.swift; sourceTree = "<group>"; };
 		E31E993F1A7F0FD000BDB079 /* ThrillistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrillistViewController.swift; sourceTree = "<group>"; };
+		E31E99411A7F1F0800BDB079 /* PostStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostStatusViewController.swift; path = Ybook/PostStatusViewController.swift; sourceTree = "<group>"; };
+		E31E99431A7F209400BDB079 /* Ybook */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = Ybook; sourceTree = SOURCE_ROOT; };
+		E31E99491A7F248300BDB079 /* PostPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostPhotoViewController.swift; path = Ybook/PostPhotoViewController.swift; sourceTree = "<group>"; };
+		E31E994B1A7F250500BDB079 /* PostCheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCheckinViewController.swift; path = Ybook/PostCheckinViewController.swift; sourceTree = "<group>"; };
 		E3CBC8A41A7B2217009BEA2E /* Ybook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ybook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CBC8A81A7B2217009BEA2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3CBC8A91A7B2217009BEA2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +77,10 @@
 		E3CBC89B1A7B2217009BEA2E = {
 			isa = PBXGroup;
 			children = (
+				E31E99491A7F248300BDB079 /* PostPhotoViewController.swift */,
+				E31E994B1A7F250500BDB079 /* PostCheckinViewController.swift */,
+				E31E99411A7F1F0800BDB079 /* PostStatusViewController.swift */,
+				E31E99431A7F209400BDB079 /* Ybook */,
 				E3CBC8A61A7B2217009BEA2E /* Ybook */,
 				E3CBC8BC1A7B2217009BEA2E /* YbookTests */,
 				E3CBC8A51A7B2217009BEA2E /* Products */,
@@ -229,11 +241,15 @@
 				E31E993E1A7DD63B00BDB079 /* MoreViewController.swift in Sources */,
 				E31E993A1A7DD1F500BDB079 /* MessagesViewController.swift in Sources */,
 				E3CBC8AC1A7B2217009BEA2E /* ViewController.swift in Sources */,
+				E31E994A1A7F248300BDB079 /* PostPhotoViewController.swift in Sources */,
+				E31E99441A7F209400BDB079 /* Ybook in Sources */,
 				E31E99361A7B5B7E00BDB079 /* FeedViewController.swift in Sources */,
 				E31E993C1A7DD40200BDB079 /* NotificationsViewController.swift in Sources */,
 				E31E99381A7DCDBD00BDB079 /* RequestsViewController.swift in Sources */,
+				E31E994C1A7F250500BDB079 /* PostCheckinViewController.swift in Sources */,
 				E31E99401A7F0FD000BDB079 /* ThrillistViewController.swift in Sources */,
 				E3CBC8AA1A7B2217009BEA2E /* AppDelegate.swift in Sources */,
+				E31E99421A7F1F0800BDB079 /* PostStatusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
