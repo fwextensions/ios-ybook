@@ -8,17 +8,22 @@
 
 import UIKit
 
-class MoreViewController: UIViewController {
+class MoreViewController: UIViewController, UIActionSheetDelegate {
 
 	@IBOutlet weak var scrollView: UIScrollView!
 	
 	@IBOutlet weak var scrolledImageView: UIImageView!
 	
+	var confirmActionSheet: UIActionSheet!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		scrollView.frame = CGRect(x: 0, y: 64, width: 320, height: 504)
 		scrollView.contentSize = scrolledImageView.image!.size
 		scrollView.contentSize.height += 50
+		
+		confirmActionSheet = UIActionSheet(title: "Log Out", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: "Log Out")
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +31,8 @@ class MoreViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+	@IBAction func onLogOut(sender: AnyObject) {
+	}
 
     /*
     // MARK: - Navigation

@@ -12,12 +12,18 @@ class FeedViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var feedImage: UIImageView!
+	@IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         scrollView.contentSize = feedImage.image!.size
 		scrollView.contentSize.height += 50
+		
+		delay(2, { () -> () in
+			self.scrollView.hidden = false
+			self.spinner.hidden = true
+		})
     }
 
     override func didReceiveMemoryWarning() {
