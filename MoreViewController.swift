@@ -23,7 +23,7 @@ class MoreViewController: UIViewController, UIActionSheetDelegate {
 		scrollView.contentSize = scrolledImageView.image!.size
 		scrollView.contentSize.height += 50
 		
-		confirmActionSheet = UIActionSheet(title: "Log Out", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: "Log Out")
+		confirmActionSheet = UIActionSheet(title: "Are you sure you want to log out?", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: "Log Out")
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +32,14 @@ class MoreViewController: UIViewController, UIActionSheetDelegate {
     }
     
 	@IBAction func onLogOut(sender: AnyObject) {
+		confirmActionSheet.showInView(view)
 	}
+	
+	func actionSheet(actionSheet: UIActionSheet!, clickedButtonAtIndex buttonIndex: Int) {
+		if (buttonIndex != confirmActionSheet.cancelButtonIndex) {
+			performSegueWithIdentifier("logoutPush", sender: self)
+		}
+}
 
     /*
     // MARK: - Navigation

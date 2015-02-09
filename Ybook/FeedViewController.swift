@@ -13,16 +13,32 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var feedImage: UIImageView!
 	@IBOutlet weak var spinner: UIActivityIndicatorView!
-    
+	
+	var refreshControl: UIRefreshControl!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
         scrollView.contentSize = feedImage.image!.size
 		scrollView.contentSize.height += 50
 		
+		refreshControl = UIRefreshControl()
+		refreshControl.addTarget(self, action: "onRefresh", forControlEvents: UIControlEvents.ValueChanged)
+		scrollView.insertSubview(refreshControl, atIndex: 0)
+	}
+	
+	override func viewDidAppear(animated: Bool) {
+		super.viewDidAppear(animated)
+			
 		delay(2, { () -> () in
+			self.scrollView.alpha = 0
 			self.scrollView.hidden = false
 			self.spinner.hidden = true
+			self.spinner.stopAnimating()
+			
+			UIView.animateWithDuration(0.5, animations: {
+				self.scrollView.alpha = 1.0
+			})
 		})
     }
 
@@ -30,7 +46,12 @@ class FeedViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	func onRefresh() {
+		delay(2, {
+			self.refreshControl.endRefreshing()
+		})
+	}
 
     /*
     // MARK: - Navigation

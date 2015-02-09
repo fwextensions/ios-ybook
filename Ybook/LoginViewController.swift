@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UIAlertViewDelegate {
+class LoginViewController: UIViewController, UIAlertViewDelegate, UITextFieldDelegate {
 
 	@IBOutlet weak var loginButton: UIButton!
 	
@@ -28,6 +28,9 @@ class LoginViewController: UIViewController, UIAlertViewDelegate {
 		loggingInButton.hidden = true
 		spinner.stopAnimating()
 		
+		usernameField.delegate = self
+		passwordField.delegate = self
+		
 		loginAlert = UIAlertView(title: "Umm, no", message: "Your username or password is wrong, idiot.", delegate: self, cancelButtonTitle: "OK")
     }
 
@@ -41,6 +44,18 @@ class LoginViewController: UIViewController, UIAlertViewDelegate {
 	}
 
 	@IBAction func onLoginClicked(sender: AnyObject) {
+		startLogin()
+	}
+	
+	func textFieldShouldReturn(textField: UITextField) -> Bool {
+		// textField.resignFirstResponder() // Dismiss the keyboard
+		startLogin()
+		
+		return false
+	}
+	
+	func startLogin()
+	{
 		spinner.startAnimating()
 		loggingInButton.hidden = false
 		
